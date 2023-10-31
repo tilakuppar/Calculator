@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+</head>
+<body> 
+    <h1>CALCULATOR</h1>
+    <div class="container">
+        <form action="">
+            <input class="inp" type="text" name="input" id="input" placeholder="0" size="30" readonly><br>
+            <div id="button">
+                <button type="button" onclick="inp('(')">(</button>
+                <button type="button" onclick="inp(')')">)</button>
+                <button type="button" onclick="inp('[')">[</button>
+                <button type="button" onclick="inp(']')">]</button>
+                <button type="reset" style="background-color:rgb(132, 189, 189);">AC</button>
+                <button type="button" value="√" onclick="inp('√')">√x</button>
+                <button type="button" value="%" onclick="inp('%')">%</button>
+                <button type="button" style="background-color: orange;" value="/" onclick="inp('/')">/</button><br>
+                <button type="button" value="7" onclick="inp('7')">7</button>
+                <button type="button" value="8" onclick="inp('8')">8</button>
+                <button type="button" value="9" onclick="inp('9')">9</button>
+                <button type="button" style="background-color: orange;" value="x" onclick="inp('*')">x</button><br>
+                <button type="button" value="4" onclick="inp('4')">4</button>
+                <button type="button" value="5" onclick="inp('5')">5</button>
+                <button type="button" value="6" onclick="inp('6')">6</button>
+                <button type="button" style="background-color: orange;" value="+" onclick="inp('+')">+</button><br>
+                <button type="button" value="1" onclick="inp('1')">1</button>
+                <button type="button" value="2" onclick="inp('2')">2</button>
+                <button type="button" value="3" onclick="inp('3')">3</button>
+                <button type="button" style="background-color: orange;" value="-" onclick="inp('-')">-</button><br>
+                <button type="button" value="0" onclick="inp('0')">0</button>
+                <button type="button" value="." onclick="inp('.')">.</button>
+                <button type="button">+/-</button>
+                <button type="button" style="background-color: rgb(250, 64, 64);" onclick="compute()">=</button><br>
+                <button type="button" value="^" onclick="inp('^')">x<sup>y</sup></button>
+                <button type="button" id="clear" onclick="backspace()">Clear</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
